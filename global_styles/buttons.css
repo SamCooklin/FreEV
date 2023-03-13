@@ -1,0 +1,33 @@
+button{
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    height: 100px;
+    width: 150px;
+    margin-left:50px;
+    padding: 20px;
+    cursor: pointer;
+    color: black;
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);   
+    border-color:rgb(82, 82, 182);
+    border-width: 5px;  
+}
+  
+button:focus{
+    border-color: brown;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+  
+button:hover{
+    background-color: rgb(151, 221, 245);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:active{
+    opacity: 0.6;
+    
+}   

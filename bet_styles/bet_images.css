@@ -1,0 +1,13 @@
+.logo{
+    width:150px;
+    height:100px;
+    margin-left:20px;
+    vertical-align: top;
+    object-fit: cover;
+}
+  
+.image{
+    display: inline-block;
+    vertical-align: top;
+}
+  

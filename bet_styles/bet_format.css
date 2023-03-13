@@ -1,0 +1,10 @@
+ 
+.container{
+    vertical-align: top;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+  
+.migrate_container{
+    object-fit: cover;
+}

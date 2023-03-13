@@ -1,0 +1,24 @@
+ 
+.poker{
+    background-color: rgb(206, 250, 139);
+}
+  
+.poker:hover{
+    color: red;
+}
+
+.casino{
+    background-color: rgb(173, 207, 255);
+}
+  
+.casino:hover{
+    color:rgb(255, 79, 109);
+}
+  
+.sports{
+    background-color: rgb(246, 210, 143);
+}
+  
+.sports:hover{
+    color:green;
+}

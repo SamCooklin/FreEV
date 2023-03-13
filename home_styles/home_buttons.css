@@ -1,0 +1,31 @@
+button{
+    height:150px;
+    width:300px;
+    font-size: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.betting{
+    background-color: rgb(240, 73, 73);
+}
+
+.betting:hover{
+    color:rgb(240, 73, 73);
+}
+
+.food{
+    background-color:rgb(49, 235, 49);
+}
+
+.food:hover{
+    color:rgb(41, 210, 41);
+}
+
+.transport{
+    background-color: rgb(72, 142, 142);
+}
+
+.transport:hover{
+    color: rgb(44, 72, 72);
+}
