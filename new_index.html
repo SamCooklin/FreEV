@@ -11,7 +11,9 @@
     
 
         <style>
-            .genres{
+            .betting-container,
+            .food-container,
+            .transport-container{
                 flex:1;
                 justify-content: space-between;
             }
@@ -23,6 +25,17 @@
             body{
                 background-color: rgb(20, 31, 31);
             }
+
+            .hidden-betting{
+                display:none;
+            }         
+
+            .betting-container:hover + .hidden-betting{
+                display:block;
+                font-size:30px;
+                font-weight:bold;
+                color:white;    
+            }
         </style>
     </head>
 
@@ -32,30 +45,34 @@
         </h1>
 
         <div style="display:flex; flex-direction:row; margin-left:100px; margin-right:100px; ">
-            <div class="genres">
-                <div class="button-container">
+            
+                <div class="betting-container">
                     <button onclick="location.href='betting.html';" class="betting">
                         Betting
                     </button>
                 </div>
-            </div>
+           
 
-            <div class="genres">
-                <div class="button-container">
+           
+                <div class="food-container">
                     <button onclick="location.href='betting.html';" class="food">
                         Food
                     </button>
                 </div>
-            </div>
+           
 
-            <div class="genres">
-                <div class="button-container">
+           
+                <div class="transport-container">
                     <button onclick="location.href='betting.html';" class="transport">
                         Transport
                     </button>
                 </div>
-            </div>
+           
 
+        </div>
+
+        <div class="hidden-betting">
+            This section should only be used to exploit sign up offers and continued free bet offers that put the player at an advantage. DO NOT CONTINUE BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN UP OFFERS
         </div>
     </body>
 
