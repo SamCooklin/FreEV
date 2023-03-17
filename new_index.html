@@ -14,8 +14,8 @@
             .betting-container,
             .food-container,
             .transport-container{
-                flex:1;
-                justify-content: space-between;
+               display:inline-block;
+               margin-right:150px;
             }
 
             button{
@@ -43,37 +43,37 @@
         <h1 style="margin-bottom: 75px; color:whitesmoke;">
             Finding the EV in Every Deal
         </h1>
-
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; margin-left:100px; margin-right:100px; ">
+        
+           
             
-                <div class="betting-container">
-                    <button onclick="location.href='betting.html';" class="betting">
-                        Betting
-                    </button>
+            <div class="betting-container" style="margin-left:50px;">
+                <button onclick="location.href='betting.html';" class="betting">
+                    Betting
+                </button>
+            </div>
+            
+            <div class="hidden-betting">
+                This section should only be used to exploit sign up offers and continued free bet offers that put the player at an advantage. DO NOT CONTINUE BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN UP OFFERS
+            </div>
+         
+            <div class="food-container">
+                <button onclick="location.href='betting.html';" class="food">
+                    Food
+                </button>
+            </div>
+        
 
-                </div>
-                
-
-           
-                <div class="food-container">
-                    <button onclick="location.href='betting.html';" class="food">
-                        Food
-                    </button>
-                </div>
-           
-
-           
-                <div class="transport-container">
-                    <button onclick="location.href='betting.html';" class="transport">
-                        Transport
-                    </button>
-                </div>
-           
-                <div class="hidden-betting">
-                    This section should only be used to exploit sign up offers and continued free bet offers that put the player at an advantage. DO NOT CONTINUE BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN UP OFFERS
-                </div>
-
-        </div>
+        
+            <div class="transport-container">
+                <button onclick="location.href='betting.html';" class="transport">
+                    Transport
+                </button>
+            </div>
+        
+            
+          
+        
+        
 
     </body>
 
