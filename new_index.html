@@ -29,7 +29,9 @@
             }
             
 
-            .hidden-betting{
+            .hidden-betting,
+            .hidden-food,
+            .hidden-transport{
                 display:none;
             }         
 
@@ -39,6 +41,22 @@
                 font-weight:bold;
                 color:white;
             }
+
+            .food-container:hover ~ .hidden-food, .space1{
+                display:block;
+                font-size:30px;
+                font-weight:bold;
+                color:white;
+            }
+
+
+            .transport-container:hover ~ .hidden-transport,.space1,.space2{
+                display:block;
+                font-size:30px;
+                font-weight:bold;
+                color:white;
+            }
+
 
             h1{
                 font-size: 100px;
@@ -62,7 +80,6 @@
             </div>
         
 
-    
             <div class="food-container">
                 <button onclick="location.href='betting.html';" class="food">
                     Food
@@ -80,20 +97,20 @@
             <div class="hidden-betting">
                 This section should only be used to exploit sign up offers and continued free bet offers that put the player at an advantage. DO NOT CONTINUE BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN UP OFFERS
             </div>
+
+            <div class="space1">
+            </div>
+
+            <div class="hidden-food">
+                This is the section where the food description will be 
+            </div>
+
+            <div class="space2">
+            </div>
+            
+            <div class="hidden-transport">
+                This is the section where the transport description will be 
+            </div>
         </div>
-
-
-        
-    
-
-
-    
-    
-        
-
     </body>
-
-
-
-
 </html>
