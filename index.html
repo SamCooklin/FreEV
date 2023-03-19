@@ -1,78 +1,104 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>
-            FreEV
-        </title>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="home_styles/home_format.css" />
+    <link rel="stylesheet" href="home_styles/home_text.css" />
+    <link rel="stylesheet" href="home_styles/home_images.css" />
+    <link rel="stylesheet" href="global_styles/global_format.css" />
+    <link rel="stylesheet" href="global_styles/buttons.css" />
+    <link rel="stylesheet" href="home_styles/home_buttons.css" />
+    <link rel="stylesheet" href="global_styles/global_text.css" />
 
-        <link rel="stylesheet" href="home_styles/home_format.css">
-        <link rel="stylesheet" href="home_styles/home_text.css">
-        <link rel="stylesheet" href="home_styles/home_images.css">
-        <link rel="stylesheet" href="global_styles/global_format.css">
-        <link rel="stylesheet" href="global_styles/buttons.css">
-        <link rel="stylesheet" href="home_styles/home_buttons.css">
-        <link rel="stylesheet" href="global_styles/global_text.css">
-    
+    <style>
+      .betting-container,
+      .food-container,
+      .transport-container {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
 
-    </head>
+      button {
+        margin: 0;
+      }
 
+      body {
+        background-color: rgb(20, 31, 31);
+      }
 
-    <body>
-        
-        <h1>
-            Finding the EV in Every Deal
-        </h1>
+      .hidden-betting,
+      .hidden-food,
+      .hidden-transport{
+        display: none;
+      }
 
+      .betting-container:hover ~ .hidden-betting,
+      .food-container:hover ~ .hidden-food,
+      .transport-container:hover ~ .hidden-transport {
+        display: block;
+        grid-column: 1/4;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
+     
 
-        <div style = "display: flex; flex-direction: column;">
-            <div class = "genre">
-                <div class = "button-container">
-                    <button onclick="location.href ='betting.html'; " class = "betting" >
-                        Betting
-                    </button>
-                </div>
+      h1 {
+        font-size: 100px;
+      }
+    </style>
+  </head>
 
-                <div class = "text-box">
-                    <p class = "description">
-                        This section should only be used to exploit sign up offers and continued free bet offers that put the player at an advantage. DO NOT CONTINUE BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN UP OFFERS
-                    </p>
-                </div>
-            </div>
+  <body>
+    <h1 style="margin-bottom: 75px; color: whitesmoke">
+      Finding the EV in Every Deal
+    </h1>
 
-            <div class = "space">
-            </div>
+    <div style="
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 150px;
+        margin-left: 200px;
+        margin-right: 200px;
+        text-align: center;
+        row-gap: 50px;
+        column-gap: 300px;
+      ">
+      
+      <div class="betting-container">
+        <button onclick="location.href='betting.html';" class="betting">
+          Betting
+        </button>
+      </div>
 
-            <div class = "genre">
-                <div class = "button-container">
-                    <button onclick="location.href ='food.html'; " class = "food">
-                        Food
-                    </button>
-                </div>
+      <div class="food-container">
+        <button onclick="location.href='food.html';" class="food">
+          Food
+        </button>
+      </div>
 
-                <div class = "text-box">
-                    <p class = "description">
-                        This section contains offers relating to food, drink and takeaway promotions - Currently Unavailable
-                    </p>
-                </div>
-            </div>
+      <div class="transport-container">
+        <button onclick="location.href='transport.html';" class="transport">
+          Transport
+        </button>
+      </div>
 
-            <div class = "space">
-            </div>
+      <div class="hidden-betting">
+        This section should only be used to exploit sign up offers and continued
+        free bet offers that put the player at an advantage. DO NOT CONTINUE
+        BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING
+        THE SIGN UP OFFERS
+      </div>
 
-            <div class  = "genre">
-                <div class = "button-container">
-                    <button onclick = "location.href = 'transport.html';" class = "transport">
-                        Transport
-                    </button>
-                </div>
+      <div class="hidden-food">
+        This section contains deals and promotions relating to food and drink. Offers may be sign up promotions or for existing users
+      </div>
 
-                <div class = "text-box">
-                    <p class = "description">
-                        This section contains offers relating to taxis, scooters and other transport related promotions - Currently Unavailable
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </body>
+      <div class="hidden-transport">
+        This section contains deals and promotions relating to taxis and other modes of transport. Offers may be sign up promotions or for existing users
+      </div>
+    </div>
+  </body>
 </html>
