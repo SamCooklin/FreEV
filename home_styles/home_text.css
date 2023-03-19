@@ -1,19 +1,14 @@
 .text-box{
     background-color: rgb(233, 233, 233);
 }
-.description{
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    position: relative;
-    top:50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin:0;
-}
 
 h1{
     text-align: center;
-    font-size: 42px;
+    font-size: 100px;
+}
+
+.hidden-betting,
+.hidden-food,
+.hidden-transport{
+  display: none;
 }

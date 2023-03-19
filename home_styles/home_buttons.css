@@ -29,3 +29,7 @@ button{
 .transport:hover{
     color: rgb(44, 72, 72);
 }
+
+button {
+    margin: 0;
+}
