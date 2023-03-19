@@ -1,116 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="home_styles/home_format.css">
-        <link rel="stylesheet" href="home_styles/home_text.css">
-        <link rel="stylesheet" href="home_styles/home_images.css">
-        <link rel="stylesheet" href="global_styles/global_format.css">
-        <link rel="stylesheet" href="global_styles/buttons.css">
-        <link rel="stylesheet" href="home_styles/home_buttons.css">
-        <link rel="stylesheet" href="global_styles/global_text.css">
+  <head>
+    <link rel="stylesheet" href="home_styles/home_format.css" />
+    <link rel="stylesheet" href="home_styles/home_text.css" />
+    <link rel="stylesheet" href="home_styles/home_images.css" />
+    <link rel="stylesheet" href="global_styles/global_format.css" />
+    <link rel="stylesheet" href="global_styles/buttons.css" />
+    <link rel="stylesheet" href="home_styles/home_buttons.css" />
+    <link rel="stylesheet" href="global_styles/global_text.css" />
 
+    <style>
+      .betting-container,
+      .food-container,
+      .transport-container {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
 
-        <style>
-            .betting-container,
-            .food-container,
-            .transport-container{
-                flex:1;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-            }
+      button {
+        margin: 0;
+      }
 
-            button{
-                margin:0;
-            }
+      body {
+        background-color: rgb(20, 31, 31);
+      }
 
-            body{
-                background-color: rgb(20, 31, 31);
-            }
-            
+      .hidden-betting,
+      .hidden-food {
+        display: none;
+      }
 
-            .hidden-betting,
-            .hidden-food,
-            .hidden-transport{
-                display:none;
-            }         
+      .betting-container:hover ~ .hidden-betting {
+        display: block;
+        grid-column: 1/4;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
+      .food-container:hover ~ .hidden-food {
+        display: block;
+        grid-column: 1/4;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
 
-            .betting-container:hover ~ .hidden-betting{
-                display:block;
-                font-size:30px;
-                font-weight:bold;
-                color:white;
-            }
+      h1 {
+        font-size: 100px;
+      }
+    </style>
+  </head>
 
-            .food-container:hover ~ .hidden-food, .space1{
-                display:block;
-                font-size:30px;
-                font-weight:bold;
-                color:white;
-            }
+  <body>
+    <h1 style="margin-bottom: 75px; color: whitesmoke">
+      Finding the EV in Every Deal
+    </h1>
 
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 150px;
+        margin-left: 200px;
+        margin-right: 200px;
+        text-align: center;
+        row-gap: 50px;
+      "
+    >
+      <div class="betting-container">
+        <button onclick="location.href='betting.html';" class="betting">
+          Betting
+        </button>
+      </div>
 
-            .transport-container:hover ~ .hidden-transport,.space1,.space2{
-                display:block;
-                font-size:30px;
-                font-weight:bold;
-                color:white;
-            }
+      <div class="food-container">
+        <button onclick="location.href='betting.html';" class="food">
+          Food
+        </button>
+      </div>
 
-
-            h1{
-                font-size: 100px;
-            }
-
-
-        </style>
-    </head>
-
-    <body>
-        <h1 style="margin-bottom: 75px; color:whitesmoke;">
-            Finding the EV in Every Deal
-        </h1>
-        
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 2fr; margin-top: 150px;">
-            
-            <div class="betting-container">
-                <button onclick="location.href='betting.html';" class="betting">
-                    Betting
-                </button>
-            </div>
-        
-
-            <div class="food-container">
-                <button onclick="location.href='betting.html';" class="food">
-                    Food
-                </button>
-            </div>
-        
-
-        
-            <div class="transport-container">
-                <button onclick="location.href='betting.html';" class="transport">
-                    Transport
-                </button>
-            </div>
-
-            <div class="hidden-betting">
-                This section should only be used to exploit sign up offers and continued free bet offers that put the player at an advantage. DO NOT CONTINUE BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN UP OFFERS
-            </div>
-
-            <div class="space1">
-            </div>
-
-            <div class="hidden-food">
-                This is the section where the food description will be 
-            </div>
-
-            <div class="space2">
-            </div>
-            
-            <div class="hidden-transport">
-                This is the section where the transport description will be 
-            </div>
-        </div>
-    </body>
+      <div class="transport-container">
+        <button onclick="location.href='betting.html';" class="transport">
+          Transport
+        </button>
+      </div>
+      <div class="hidden-betting">
+        This section should only be used to exploit sign up offers and continued
+        free bet offers that put the player at an advantage. DO NOT CONTINUE
+        BETTING WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING
+        THE SIGN UP OFFERS
+      </div>
+      <div class="hidden-food">
+        This FOOD should only be used to exploit sign up FOOD and continued free
+        bet offers that put FOOD player at an advantage. DO NOT CONTINUE BETTING
+        WITH YOUR OWN MONEY OR INSTEAD CLOSE YOUR ACCOUNT AFTER USING THE SIGN
+        UP OFFERS
+      </div>
+    </div>
+  </body>
 </html>
